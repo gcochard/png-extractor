@@ -1,9 +1,14 @@
 var fs = require('fs')
   , path = require('path')
-  , yargs = require('yargs')
+  , argv = require('yargs')
+    .usage('Usage: $0 -f inputfile')
+    .alias('f','file')
+    .describe('f','Input file')
+    .demand('f')
+    .argv
   ;
 /*jslint stupid:true*/
-var data = fs.readFileSync(path.resolve(__dirname,'images.rcc'),{encoding:'binary'});
+var data = fs.readFileSync(path.resolve(__dirname,argv.f),{encoding:'binary'});
 var start = 0;
 var end = 0;
 var index = 0;
