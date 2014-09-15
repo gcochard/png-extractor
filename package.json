@@ -1,6 +1,6 @@
 {
   "name": "png-extractor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pulls PNG files out of binary files. Useful for extracting resources from qt rcc files.",
   "main": "app.js",
   "scripts": {
@@ -8,8 +8,8 @@
   },
   "author": "Greg Cochard <greg.cochard@gmail.com>",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/gcochard/png-extractor.git"
+    "type": "git",
+    "url": "https://github.com/gcochard/png-extractor.git"
   },
   "license": "BSD",
   "dependencies": {
